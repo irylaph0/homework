@@ -1,0 +1,20 @@
+.parent {
+    height: 600px;
+    width: 80%;
+    background: #cac7c7d8;
+    overflow: auto;
+    border: 2px solid black;
+    border-radius: 40px 0 0 40px;
+}
+
+.child {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background: #b1924596;
+    margin: 10px 20px 20px 10px;
+    border-radius: 40px;
+    box-shadow: inset 0px 0px 20px 0px black;
+    padding: 30px;
+    font-size: 25px;
+}
