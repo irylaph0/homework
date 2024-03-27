@@ -46,6 +46,7 @@ ul {
 .section-one {
     background-image: url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
+    background-position: 0 70%;
     height: 508px;
     background-size: cover;
     padding: 120px 0;
@@ -143,6 +144,8 @@ h2 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: -28px;
+    padding-bottom: 30px;
 }
 
 .section-two-card {
@@ -151,7 +154,7 @@ h2 {
     border: 2px solid #176bae;
     border-radius: 16px;
     padding: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 h4 {
@@ -200,7 +203,8 @@ footer {
 }
 
 .footer-column-one img {
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
+    ;
 }
 
 .footer-column-two {
@@ -211,11 +215,11 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer-column-two a {
+.footer-column-two li {
     margin-bottom: 10px;
 }
 
-.footer-nav{
+.footer-nav {
     display: flex;
     flex-direction: column;
 }
