@@ -1,0 +1,106 @@
+body {
+    background: #F8FCFF;
+    color: #25282B;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ===================================================================== */
+
+.header {
+    min-height: 108px;
+    padding: 30px 0;
+    line-height: 150%;
+}
+
+.header__wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-height: 48px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px 30px;
+}
+
+/* ===================================================================== */
+
+.hero {
+    background: black;
+    color: #F8FCFF;
+    height: 582px;    
+}
+
+.hero__wrapper {
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.hero__title {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+
+.hero__advantages {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 150%;
+}
+
+.hero__advantages li {
+    margin-bottom: 15px;
+    padding: 6px 0;
+}
+
+.hero__advantages svg {
+    margin-right: 19px;
+}
+
+.hero__advantages li:last-child {
+    margin-bottom: 0;
+}
+
+.button {
+    font-weight: 500;
+    color: #1D6FB6;
+    padding: 18px 30px;
+    width: 288px;
+    border-radius: 100px;
+    background: #D0DCE7;
+    text-align: center;
+}
+
+.button:hover {
+    background: #83ADD3;
+    color: #F8FCFF;
+    transition: 0.6s;
+}
