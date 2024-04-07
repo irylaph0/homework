@@ -49,9 +49,10 @@ body {
 /* ===================================================================== */
 
 .hero {
-    background: black;
     color: #F8FCFF;
-    height: 582px;    
+    height: 100%;
+    line-height: 1.5;
+    position: relative;
 }
 
 .hero__wrapper {
@@ -59,34 +60,72 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .hero__title {
     font-size: 52px;
     font-weight: 600;
     margin-bottom: 30px;
-    line-height: 150%;
 }
 
 .hero__advantages {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 40px;
-    line-height: 150%;
 }
 
 .hero__advantages li {
     margin-bottom: 15px;
     padding: 6px 0;
+    transition: 0.6s;
+}
+
+.hero__advantages li:last-child {
+    margin-bottom: 0;
+}
+
+.hero__advantages li:hover {
+    color: #1D6FB6;
+}
+
+.hero__advantages li:hover path {
+    fill: #1D6FB6;
 }
 
 .hero__advantages svg {
     margin-right: 19px;
 }
 
-.hero__advantages li:last-child {
-    margin-bottom: 0;
+.hero__advantages path {
+    transition: 0.6s;
+}
+
+.main__video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.main__video::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #102E49CC;
+}
+
+.main__video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .button {
@@ -97,10 +136,11 @@ body {
     border-radius: 100px;
     background: #D0DCE7;
     text-align: center;
+    transition: 0.6s;
 }
 
 .button:hover {
     background: #83ADD3;
     color: #F8FCFF;
-    transition: 0.6s;
+
 }
