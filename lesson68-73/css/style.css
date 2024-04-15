@@ -18,7 +18,7 @@ body {
 .header {
     min-height: 108px;
     padding: 30px 0;
-    line-height: 150%;
+    line-height: 1.5;
 }
 
 .header__wrapper {
@@ -41,6 +41,7 @@ body {
 
 .socials {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: end;
     gap: 10px 30px;
@@ -49,14 +50,13 @@ body {
 /* ===================================================================== */
 
 .hero {
+    padding: 120px 0;
     color: #F8FCFF;
-    height: 100%;
     line-height: 1.5;
     position: relative;
 }
 
 .hero__wrapper {
-    padding: 120px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -146,15 +146,21 @@ body {
 
 /* ===================================================================== */
 
-.main__wrapper {
+.main__general {
     padding: 120px 0;
+}
+
+
+.main__wrapper {
     display: flex;
-    gap: 126px;
+    gap: 30px;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .main__body {
-    display: flex;
-    flex-direction: column;
+    min-width: 0;
+    max-width: 792px;
     width: 100%;
 }
 
@@ -164,8 +170,10 @@ body {
 
 .aside {
     border: 2px solid #d0dce7;
+    font-weight: 500;
     width: 100%;
     max-width: 282px;
+    
 }
 
 .aside__list {
@@ -190,18 +198,12 @@ body {
     width: 100%;
 }
 
-.gallery__img_big-left,
-.gallery__img_big-right {
-    font-size: 24px;
-    line-height: 29px;
-}
-
 .gallery__img {
+    display: block;
     position: relative;
     overflow: hidden;
     padding-bottom: 100%;
 }
-
 
 .gallery__img img {
     width: 100%;
@@ -210,7 +212,7 @@ body {
     top: 0;
     left: 0; 
     object-fit: cover;
-    object-position: center center;
+    object-position: 50% 50%;
 }
 
 .gallery__img_big-left {
@@ -243,20 +245,24 @@ body {
     transform: translateY(0%);
 }
 
+.gallery__img_big-left,
+.gallery__img_big-right {
+    font-size: 24px;
+    line-height: 29px;
+}
+
 /* ===================================================================== */
 
-.products__list {
+.products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    width: 100%;
-    grid-auto-flow: dense;
+
+
 }
 
 .products__item-img {
-    display: block;
     position: relative;
-    overflow: hidden;
     padding-bottom: 67.2%;
 }
 
@@ -276,5 +282,7 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
+    border: 1px solid #D0DCE7;
+    border-top: none;
 }
 
